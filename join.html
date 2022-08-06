@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>join membership</title>
+
+    <link rel="stylesheet" href="partermap.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>PARTNER MAP</h1>
+        <nav>
+            <ul class="menu">
+                    <span class="banner_1">제휴업체소개</span>
+                    <span class="banner_2">선호도게시판</span>
+                    <span class="banner_3">로그인</span>
+            </ul>
+        </nav>
+      </header>
+
+
+    <div id="wrap">
+        <form class="join_membership">
+            <h1>회원가입</h1>
+            <label> 아이디 : <input id="id" type="text"></label>
+            <label> 비밀번호 : <input id="pw" type="text"></label>
+            <label> 비밀번호 확인 : <input id="r_pw" type="text"></label>
+        <div>
+            <input type="button" value="뒤로 가기" onclick="back();">
+            <input type="button" value="회원가입" onclick="create_id();">
+        </div>
+    </form>
+
+    </div>
+
+    
+
+    <script src="join.js"></script>
+
+    <script>
+
+            function login() {
+            var id = document.querySelector('#id');
+            var pw = document.querySelector('#pw');
+
+            if(id.value == "" || pw.value == "") {
+                alert("로그인을 할 수 없습니다.")
+            }
+            else {
+                location.href = 'partermap.html';
+            }
+        }
+
+        function back() {
+            history.go(-1);
+        }
+
+        function create_id() {
+        var id = document.querySelector('#id');
+        var pw = document.querySelector('#pw');
+        var r_pw = document.querySelector('#r_pw');
+
+        if(id.value == "" || pw.value == "" || r_pw.valye == "") {
+            alert("회원가입을 할 수 없습니다.")
+        }
+        else {
+            if(pw.value !== r_pw.value) {
+                alert("비밀번호를 확인해 주세요.")
+            }
+            else {
+                location.href = 'partermap.html';
+            }
+        }
+        }
+
+    </script>
+
+</body>
+</html>
