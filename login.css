@@ -1,0 +1,102 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  background: rgb(22, 26, 122);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  padding: 0 80px;
+}
+
+.banner_1{
+  font-size: large;  
+  margin: 0 15px; 
+ }
+ 
+ .banner_2{
+     font-size: large;
+     margin: 0 15px;
+ 
+ }
+ 
+ .banner_3{
+     font-size: large;
+     margin:0 15px;
+ }
+
+ .banner_4{
+  font-size: large;
+  margin:0 15px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+  font-family: 'Montserrat';
+}
+  
+  body {
+    margin:0px;
+    padding:0px;
+    padding-top: 20px;
+    min-width: fit-content;
+}
+
+
+  
+/*로그인 박스*/
+#wrap {
+  width: 400px;
+  height: 320px;
+  border: 1px solid #ebebeb;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+ 
+.login_form {
+    padding: 30px 30px;
+}
+
+.login-text {
+  font-size:25px;
+  font-weight: bold;
+  text-align: center;
+}
+ 
+input {
+    margin-bottom: 5px;
+    width: 290px;
+    height: auto;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 1px solid rgb(194, 202, 248);
+    border-radius: 5px;
+    outline-style: none;
+    margin-top: 15px;
+}
+ 
+button {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid whitesmoke;
+}
+
+a {
+  margin-top: 15px;
+}
